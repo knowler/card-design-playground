@@ -1,0 +1,17 @@
+{
+  "name": "@knowler/card-design-playground",
+  "repository": "https://github.com/knowler/card-design-playground.git",
+  "author": "Nathan Knowler <nathan@knowler.me>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "postcss src/main.css -d dist",
+    "start": "concurrently \"postcss src/main.css -d dist -w\" \"live-server\""
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^6.1.3",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
